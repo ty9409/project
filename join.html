@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<!-- <link type="text/css" rel="stylesheet" href="join4style.css">-->
+<style>
+
+/* 회원가입 전체 창*/
+#join4 {
+	width: 850px;
+	height: 900px;
+	clear: both;
+	font: 굴림;
+	margin: 60px;
+	padding: 0;
+	line-height: 2;
+	em-color: "red";
+}
+
+/* 제목 */
+#title {
+	margin: 10px;
+	padding: 5px;
+	list-style: none;
+	background: rgb(255, 255, 255);
+	font: strong 35px 돋움;
+	padding: 5px;
+}
+
+/* 항목 */
+.article {
+	padding: 5px;
+	width: 110px;
+	font: bold 14px 굴림;
+	background: rgb(213, 213, 213);
+	width: 110px;
+	/* color: red; */
+}
+
+/* 콘텐츠 */
+.content {
+	width: 750px;
+}
+</style>
+</head>
+<body>
+	<div id="join4">
+		<h1 id="title" align="center">회원가입</h1>
+		<h2 id="title2">
+			<ul>
+				<li>온라인 회원가입 작성</li>
+			</ul>
+		</h2>
+		<p>
+		<ul>
+			<li>고객님의 정보는 개인정보 보호정책에 의해 철저하게 보호됩니다.</li>
+		</ul>
+		</p>
+
+
+		<table border="0">
+			<tr>
+				<td class="article">사용자ID *</td>
+				<td class="content"><input type="text" name="id"
+					autofocus="autofocus" required="required">
+					<button name="idcheck" onclick="alter('사용할 수 있는 ID입니다!')">ID
+						중복확인</button></td>
+			</tr>
+
+			<tr>
+				<td class="article">비밀번호 *</td>
+				<td class="content"><input type="password" name="pw"> <label>
+						● 4~12자리의 영문, 숫자, 특수문자(!,@,#,$,%,^,&,*)만 가능</label>
+			</tr>
+
+			<tr>
+				<td class="article">비밀번호 확인 *</td>
+				<td class="content"><input type="password" name="pwcheck">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="article">성명 *</td>
+				<td class="content"><input type="text" name="name"> <label>
+						● 띄어쓰기없이 입력, 반드시 <b>실명</b>이어야 합니다!
+				</label></td>
+			</tr>
+
+			<tr>
+				<td class="article">E-mail *</td>
+				<td class="content"><input type="email" name="email"> <b>메일
+						수신여부</b><br /> <label> ⊙ <b>할인 이벤트 정보</b> 및 할인 쿠폰, 관심분야 등 꼭
+						필요한 정보를 빠르게 받아보실 수 있습니다.
+				</label><br /> <label> ⊙ 비밀번호 분실시 E-mail로 확인해 드리니, <em>정확한
+							E-mail주소를 기입</em>해 주세요.
+				</label></td>
+			</tr>
+
+			<tr>
+				<td class="article">우편번호 *</td>
+				<td class="content"><input type="text" name="post1">-<input
+					type="text" name="post2">
+					<button name="postsearch">우편번호 검색</button></td>
+			</tr>
+
+			<tr>
+				<td class="article" rowspan="2"><b>주소 *</b></td>
+				<td class="content"><input type="text" name="address1"></td>
+			</tr>
+
+			<tr>
+				<td class="content"><input type="text" name="address2">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="article">휴대폰번호 *</td>
+				<td class="content"><input type="tel" name="phone1">-<input
+					type="tel" name="phone2">-<input type="tel" name="phone3"></td>
+			</tr>
+		</table>
+		<br />
+		<button name="nextbutton">다음</button>
+	</div>
+</body>
+</html>
